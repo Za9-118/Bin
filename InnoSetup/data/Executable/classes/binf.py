@@ -47,7 +47,7 @@ def set_iconr(hungry,file):
         
         link.path = f"{dire}/../Bin.exe"
 
-        link.working_directory = dire+"/.."
+        link.working_directory = dire
         link.icon_location = (os.path.join(dire, ico.replace("/", "\\")), 0)
     pythoncom.CoUninitialize()
 
@@ -70,6 +70,6 @@ def set_ico(hungry,root,file):
         
         link.path = f"{dire}/../Bin.exe"
 
-        link.working_directory = dire+"/.."
+        link.working_directory = dire
         link.icon_location = (os.path.join(dire, ico.replace("/", "\\")), 0)
     pythoncom.CoUninitialize()
